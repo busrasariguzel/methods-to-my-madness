@@ -50,13 +50,23 @@ function includes(arr, item) {
 function join(arr, separator = '') {
   let newArr =''
   for(let i=0; i <arr.length; i++){
-    newArr.push(arr[i] + separator )
+    if(i=== arr.length-1){
+    newArr =newArr + arr[i]}
+    else{
+  newArr =newArr + arr[i] + separator}
 }
 return newArr
 }
 
 
 function split(str, separator) {
+  let newArr=[]
+  for(let i=0; i <str.length; i++){
+    newArr.push(str + separator)
+
+
+
+}
 }
 
 function trimStart(str) {
