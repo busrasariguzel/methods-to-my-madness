@@ -130,7 +130,7 @@ describe('split', () => {
     expect(split('colin.jaffe.is.pretty.silly', '.')).toEqual(['colin', 'jaffe', 'is', 'pretty', 'silly'])
     expect(split('toysrus', 'r')).toEqual(['toys', 'us'])
   })
-});
+});  
 
 describe('trimStart', () => {
   it(`removes all spaces from the start of a string with spaces at the beginning`, () => {

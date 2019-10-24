@@ -62,17 +62,55 @@ return newArr
 function split(str, separator) {
   let newArr=[]
   for(let i=0; i <str.length; i++){
-    newArr.push(str + separator)
-
-
-
+    if (str[i] === separator){
+    newArr.push(str.slice(0,i) +separator)
+    }
+    else if (str[i-1] === separator){
+      newArr.push(str.slice(i))
+    
+  }
+return newArr
 }
 }
 
 function trimStart(str) {
+  let newStr = ''
+  for(let i=0 ; i <str.length; i++){
+    
+    if (str[i] === ' '){
+      if( str[i] === ' ' && str[i+1] !== ' ' && str[i-1] !== ' '){
+        newStr = newStr + str[i]}
+      
+      newStr = newStr
+    }
+    if (str[i] !== ' '){
+      newStr = newStr + str[i]
+    }
+    
+    else if (str[0 ] !== ' '){
+      newStr = newStr + str[i]}
+
+    else if (str[str.length] === ' ')
+    newStr = newStr + str[i]
+    
+} 
+return newStr
+
 }
 
+
 function trimEnd(str) {
+  let newStr = ''
+  for(let i=0 ; i <str.length; i++){
+    
+    if (str[i] === ' '){
+      if( str[i] === ' ' && str[i+1] !== ' ' && str[i-1] !== ' '){
+        newStr = newStr + str[i]}
+      
+      newStr = newStr
+    }
+  }
+    return newStr
 }
 
 
